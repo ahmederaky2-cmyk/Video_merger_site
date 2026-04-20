@@ -1,71 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Videomera</title>
-    <style>
-      :root {
-        color-scheme: light;
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
-        background: #f6f8fb;
-        color: #0f1824;
-      }
-      body {
-        margin: 0;
-        padding: 48px 24px;
-        display: flex;
-        justify-content: center;
-      }
-      main {
-        max-width: 720px;
-        width: 100%;
-        background: white;
-        border-radius: 24px;
-        padding: 40px;
-        box-shadow: 0 20px 60px rgba(17, 34, 68, 0.12);
-      }
-      h1 {
-        margin: 0 0 8px 0;
-        font-size: 36px;
-      }
-      p {
-        line-height: 1.6;
-        margin: 0 0 16px 0;
-      }
-      nav a {
-        display: inline-block;
-        margin-right: 16px;
-        color: #0a5d72;
-        text-decoration: none;
-        font-weight: 600;
-      }
-      nav a:hover {
-        text-decoration: underline;
-      }
-      .tagline {
-        color: #5b6b7b;
-      }
-      .card {
-        margin-top: 24px;
-        padding: 20px;
-        border-radius: 16px;
-        background: #f0f4f8;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>Videomera</h1>
-      <p class="tagline">Fast video merge for macOS.</p>
-      <nav>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videomera - Fast batch video merging for macOS</title>
+  <meta name="description" content="Videomera is a fast macOS app for merging related video clips into clean ordered exports with XML metadata, batch queues, and simple local control.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html" aria-label="Videomera home"><span class="mark" aria-hidden="true"></span><span>Videomera</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="./support.html">Support</a>
+        <a href="./privacy.html">Privacy</a>
+        <a class="button" href="mailto:eraappai@gmail.com">Contact</a>
       </nav>
-      <div class="card">
-        <p>Videomera lets you import clips, reorder them, and export a single merged file quickly.</p>
-        <p>If you need help, visit the Support page or email <strong>eraappai@gmail.com</strong>.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div>
+        <div class="eyebrow">macOS video utility</div>
+        <h1>Merge related clips fast. Stay out of the editor.</h1>
+        <p class="lede">Videomera turns scattered video clips into one clean, ordered export with a simple queue, XML-aware naming, batch folder support, and a speed-first merge path when formats match.</p>
+        <div class="hero-actions">
+          <a class="button" href="./support.html">Get support</a>
+          <a class="button secondary" href="#workflow">See workflow</a>
+        </div>
       </div>
-    </main>
-  </body>
+
+      <div class="panel mock-window" aria-label="Videomera interface preview">
+        <div class="mock-top"><span>Active queue</span><span>Fast copy ready</span></div>
+        <div class="queue">
+          <div class="queue-row">
+            <div class="queue-number">01</div>
+            <div><div class="queue-title">Case_A_001.mp4</div><div class="queue-sub">1920 x 1080 - 30 fps</div></div>
+            <div class="queue-pill">MP4</div>
+          </div>
+          <div class="queue-row">
+            <div class="queue-number">02</div>
+            <div><div class="queue-title">Case_A_002.mp4</div><div class="queue-sub">Matched format</div></div>
+            <div class="queue-pill">COPY</div>
+          </div>
+          <div class="queue-row">
+            <div class="queue-number">03</div>
+            <div><div class="queue-title">Case_A_003.mp4</div><div class="queue-sub">Queued for export</div></div>
+            <div class="queue-pill">READY</div>
+          </div>
+        </div>
+        <div class="progress-card">
+          <div class="progress-label"><span>Export progress</span><strong>72%</strong></div>
+          <div class="progress-track"><div class="progress-fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container section">
+      <h2>Built for high-volume clip organization.</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Batch queues</h3>
+          <p>Queue multiple folders as separate merge jobs so many related cases can be processed with fewer repeated clicks.</p>
+        </article>
+        <article class="card">
+          <h3>Fast-copy first</h3>
+          <p>When source clips share compatible formats, Videomera uses the faster path and avoids unnecessary re-encoding work.</p>
+        </article>
+        <article class="card">
+          <h3>XML-aware naming</h3>
+          <p>Supported XML manifests can provide patient, identifier, procedure, and operator details for cleaner export names.</p>
+        </article>
+        <article class="card">
+          <h3>Simple reordering</h3>
+          <p>Move clips up or down before export without opening a timeline editor or learning a production suite.</p>
+        </article>
+        <article class="card">
+          <h3>Local control</h3>
+          <p>Choose where the merged files are saved, including local drives and folders synced by services you already use.</p>
+        </article>
+        <article class="card">
+          <h3>Clear progress</h3>
+          <p>See the current job, merge pathway, progress, and status in a focused interface made for quick decisions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="container section">
+      <div class="panel copy">
+        <div class="eyebrow">Workflow</div>
+        <h2>Add. Order. Export.</h2>
+        <div class="steps">
+          <div class="step"><div><h3>Add clips or XML manifests</h3><p>Import files directly, choose a folder, or load an XML manifest when available.</p></div></div>
+          <div class="step"><div><h3>Review the queue</h3><p>Confirm clip order, remove anything that does not belong, and queue more cases if needed.</p></div></div>
+          <div class="step"><div><h3>Export once</h3><p>Videomera creates a new merged output while leaving source files in place.</p></div></div>
+        </div>
+        <div class="callout">Videomera is local-first. Your videos and XML files stay on your Mac unless you choose a destination that is already synced by another service.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Ahmed Eraky. All rights reserved.</div>
+      <div class="nav-links"><a href="./support.html">Support</a><a href="./privacy.html">Privacy</a><a href="mailto:eraappai@gmail.com">eraappai@gmail.com</a></div>
+    </div>
+  </footer>
+</body>
 </html>
