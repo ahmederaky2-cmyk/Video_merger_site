@@ -1,54 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Videomera Support</title>
-    <style>
-      :root {
-        color-scheme: light;
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
-        background: #f6f8fb;
-        color: #0f1824;
-      }
-      body {
-        margin: 0;
-        padding: 48px 24px;
-        display: flex;
-        justify-content: center;
-      }
-      main {
-        max-width: 760px;
-        width: 100%;
-        background: white;
-        border-radius: 24px;
-        padding: 40px;
-        box-shadow: 0 20px 60px rgba(17, 34, 68, 0.12);
-      }
-      h1 {
-        margin: 0 0 8px 0;
-        font-size: 32px;
-      }
-      p, li {
-        line-height: 1.6;
-      }
-      a {
-        color: #0a5d72;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>Videomera Support</h1>
-      <p>Need help? Email us and include the clip format and macOS version if possible.</p>
-      <p>Contact: <a href="mailto:eraappai@gmail.com">eraappai@gmail.com</a></p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videomera Support</title>
+  <meta name="description" content="Support for Videomera, a fast macOS video merging utility.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html"><span class="mark" aria-hidden="true"></span><span>Videomera</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./privacy.html">Privacy</a>
+        <a class="button" href="mailto:eraappai@gmail.com">Email support</a>
+      </nav>
+    </div>
+  </header>
 
-      <h2>Common tips</h2>
+  <main class="container section">
+    <article class="panel copy">
+      <div class="eyebrow">Support</div>
+      <h1>Videomera Support</h1>
+      <p class="lede">Need help with importing, queueing, or exporting? Email <a href="mailto:eraappai@gmail.com">eraappai@gmail.com</a>.</p>
+
+      <h2>Helpful details to include</h2>
       <ul>
-        <li>Keep all clips from the same case in one folder for best speed.</li>
-        <li>Reorder clips using the up/down arrows in the queue.</li>
-        <li>If a merge fails, try exporting to a local folder first.</li>
+        <li>Your macOS version.</li>
+        <li>Whether the files are on your Mac, an external drive, or a network/cloud-synced folder.</li>
+        <li>The source format, such as MP4 or MOV, and whether the clips came from the same recording system.</li>
+        <li>The exact export status or error message shown by Videomera.</li>
       </ul>
-    </main>
-  </body>
+
+      <h2>Common fixes</h2>
+      <ul>
+        <li>If Videomera cannot open a file, add the folder again using the in-app folder picker so macOS grants access.</li>
+        <li>If there is not enough disk space, export to the external drive that contains the source videos or another drive with enough free space.</li>
+        <li>Fast-copy merge is available when clips share compatible video settings. Mixed formats may need the safer compatibility export path.</li>
+        <li>If a synced folder is slow, export locally first, then let iCloud Drive, OneDrive, Dropbox, or your chosen service sync the finished file.</li>
+      </ul>
+
+      <div class="callout">Videomera creates a new merged export and leaves your source clips in place.</div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Ahmed Eraky. All rights reserved.</div>
+      <div class="nav-links"><a href="./index.html">Home</a><a href="./privacy.html">Privacy</a></div>
+    </div>
+  </footer>
+</body>
 </html>
